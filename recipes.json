@@ -3,7 +3,10 @@
     "id": "banankage",
     "titel": "Banankage",
     "kategori": "Kager",
-    "tags": ["frugt", "banan"],
+    "tags": [
+      "frugt",
+      "banan"
+    ],
     "ovn": "175°",
     "bagetid": "40–50 min",
     "bagetidMin": 45,
@@ -36,7 +39,10 @@
     "id": "brownies",
     "titel": "Brownies",
     "kategori": "Kager",
-    "tags": ["chokolade", "karamel"],
+    "tags": [
+      "chokolade",
+      "karamel"
+    ],
     "ovn": "180°",
     "bagetid": "ca. 40 min",
     "bagetidMin": 40,
@@ -75,12 +81,14 @@
   },
   {
     "id": "chocolate-chip-cookies",
-    "titel": "Chocolate Chip Cookies",
+    "titel": "Chocolate Chip Cookies (Toll House)",
     "kategori": "Småkager",
-    "tags": ["chokolade"],
+    "tags": [
+      "chokolade"
+    ],
     "ovn": "175°",
     "bagetid": "10–15 min",
-    "bagetidMin": 12,
+    "bagetidMin": 13,
     "udbytte": "6 pr. bradepande",
     "tilfoejet": "2026-11-03",
     "ingredienser": [
@@ -111,7 +119,11 @@
     "id": "aebletaerte-med-kanel",
     "titel": "Æbletærte med kanel",
     "kategori": "Tærter",
-    "tags": ["frugt", "æble", "kanel"],
+    "tags": [
+      "frugt",
+      "æble",
+      "kanel"
+    ],
     "ovn": "170°",
     "bagetid": "ca. 40 min",
     "bagetidMin": 40,
@@ -141,5 +153,296 @@
       "Bag ved 170 grader i ca. 40 minutter, eller til den er gylden på toppen."
     ],
     "noter": "Nydes med en skefuld creme fraiche og evt. en god kop kaffe."
+  },
+  {
+    "id": "fluffy-poelsehorn",
+    "titel": "Fluffy Pølsehorn",
+    "kategori": "Boller",
+    "tags": [
+      "pølser",
+      "gærdej",
+      "bagværk"
+    ],
+    "ovn": "180° varmluft",
+    "bagetid": "18–22 min",
+    "bagetidMin": 20,
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "500 g hvedemel",
+      "7 g tørgær eller 25 g frisk gær",
+      "1 tsk salt",
+      "4 tsk sukker",
+      "60 g blødt smør",
+      "2,5 dl mælk",
+      "1 æg",
+      "1 æg og lidt mælk til pensling",
+      "Sesamfrø til drys",
+      "Pølser af god kvalitet"
+    ],
+    "fremgangsmaade": [
+      "Forvarm ovnen til 180° varmluft.",
+      "Lun mælk og smør, til smørret lige smelter, og tilsæt sukker og salt.",
+      "Bland mel og tørgær, og tilsæt derefter den lune mælk/smør-blanding sammen med ægget.",
+      "Ælt dejen glat og smidig i en røremaskine i 5–7 minutter (eller ca. 10 minutter i hånden).",
+      "Lad dejen hæve i skålen under et fugtigt klæde, til den har dobbelt størrelse.",
+      "Form ensartede boller á ca. 70 g, og rul dem til lange slanger, som du snor om pølserne.",
+      "Lad pølsehornene efterhæve, til de næsten er dobbelt størrelse.",
+      "Pensl med æg og mælk, og drys med sesam.",
+      "Bag ved 180° varmluft i 18–22 minutter."
+    ]
+  },
+  {
+    "id": "pasta-ala-river-cottage",
+    "titel": "Pasta ala River Cottage",
+    "kategori": "Supper",
+    "tags": [
+      "svinekød",
+      "pasta",
+      "paprika"
+    ],
+    "udbytte": "Til 8 personer",
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "1 kg hakket svinekød",
+      "4 g paprika",
+      "1,2 g røget paprika",
+      "0,8 g fennikelfrø",
+      "1,2 g spidskommen",
+      "1,2 g koriander",
+      "20 g hvidløg (ca. 4 fed)",
+      "140 ml rødvin",
+      "6 g oregano",
+      "100 g champignon (steges separat)",
+      "400 ml fløde",
+      "400 ml vand",
+      "Salt og peber efter smag"
+    ],
+    "fremgangsmaade": [
+      "Bland det hakkede svinekød med paprika, røget paprika, fennikelfrø, spidskommen, koriander, hvidløg, rødvin og oregano dagen før.",
+      "Lad kødet marinere natten over i køleskabet.",
+      "Steg det marinerede kød på dagen, men undgå at bryde det i for små stykker.",
+      "Steg champignonerne separat.",
+      "Kom det stegte kød og champignonerne i en gryde.",
+      "Tilsæt fløde og vand.",
+      "Kog det hele sammen, og justér tykkelsen efter behov.",
+      "Hvis det er for vandet, kan du koge det ind, og smag til med salt og peber."
+    ],
+    "noter": "Salt og peber justeres efter konsistens og smag, efter kogning."
+  },
+  {
+    "id": "chocolate-chip-cookies-2",
+    "titel": "Chocolate chip cookies",
+    "kategori": "Småkager",
+    "tags": [
+      "chokolade",
+      "småkager",
+      "bagning"
+    ],
+    "ovn": "175°",
+    "bagetid": "10 min",
+    "bagetidMin": 10,
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "225 g smør, blødt",
+      "200 g hvidt sukker",
+      "200 g brun farin",
+      "2 æg",
+      "2 tsk vaniljeekstrakt",
+      "375 g hvedemel",
+      "1 tsk natron",
+      "2 tsk varmt vand",
+      "½ tsk salt",
+      "340 g mørke chokoladestykker"
+    ],
+    "fremgangsmaade": [
+      "Forvarm ovnen til 175°C.",
+      "Pisk smør, hvidt sukker og brun farin sammen, til det er cremet.",
+      "Pisk æggene i ét ad gangen, og rør derefter vanilje i.",
+      "Opløs natron i det varme vand, og tilsæt det sammen med saltet.",
+      "Rør melet i dejen, og vend derefter chokoladestykkerne i.",
+      "Læg store skefulde dej på en bageplade uden at smøre den.",
+      "Bag i cirka 10 minutter, eller indtil kanterne er gyldne."
+    ],
+    "noter": "Tekstens mål er omregnet: 2 tsk vaniljeekstrakt og 1 tsk natron er allerede danske mål, og tsk er brugt for teskefulde. Opskriften angiver ikke udbytte eller form."
+  },
+  {
+    "id": "mcchicken-smash-tacos",
+    "titel": "McChicken Smash Tacos",
+    "kategori": "Tacos",
+    "tags": [
+      "kylling",
+      "tacos",
+      "hurtig"
+    ],
+    "udbytte": "8 tacos",
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "500 g hakket kylling",
+      "2 tsk hvidløgspulver",
+      "Salt og sort peber efter smag",
+      "8 små mel-tortillas",
+      "1,2 dl rasp",
+      "2,4 dl revet isbergsalat",
+      "0,6 dl light mayonnaise",
+      "0,6 dl Miracle Whip",
+      "McChicken-sauce (opskrift mangler i materialet)",
+      "Lidt avocadoolie til stegning"
+    ],
+    "fremgangsmaade": [
+      "Bland light mayonnaise og Miracle Whip i en lille skål, til det er glat. Sæt til side.",
+      "Bland det hakkede kylling med hvidløgspulver, sort peber og salt i en mellemstor skål.",
+      "Tryk et tyndt lag krydret kylling på bagsiden af hver mel-tortilla, så det dækker jævnt. Drys derefter raspen over for ekstra sprødhed.",
+      "Varm en stor pande op ved middel-høj varme med lidt avocadoolie. Læg tortillaen kyllingesiden ned og steg i 3-4 minutter, til kyllingen er gylden og gennemstegt. Vend og steg tortillasiden sprød i 2-3 minutter til.",
+      "Smør en rigelig mængde McChicken-sauce over den sprøde kylling, top med revet salat.",
+      "Fold den sammen som en taco, og nyd den."
+    ],
+    "noter": "Brug den canadiske McChicken-sauce (sødere), ikke den amerikanske."
+  },
+  {
+    "id": "garlic-bread-dip-med-ristet-hvidloeg",
+    "titel": "Garlic bread dip med ristet hvidløg",
+    "kategori": "Supper",
+    "tags": [
+      "hvidløg",
+      "ost",
+      "dip"
+    ],
+    "ovn": "175°",
+    "bagetid": "15–20 min",
+    "bagetidMin": 18,
+    "form": "Ovnfast fad",
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "1 pakke (225 g) flødeost, blødgjort",
+      "3/4 kop (ca. 170 g) hytteost",
+      "1/4 kop (ca. 60 ml) Hellmann's Garlic Aioli",
+      "1 1/2 kop (ca. 170 g) revet mozzarella",
+      "1 1/2 kop (ca. 140 g) revet parmesan",
+      "1/2 tsk løgpulver",
+      "1 tsk salt",
+      "1/2 tsk hvidløgspulver",
+      "2 spsk frisk persille",
+      "3 spsk hakkede purløg",
+      "3 hele hvidløgshoveder",
+      "2 spsk olivenolie",
+      "Salt",
+      "1 spsk hakket persille (til dip, se trin 2)"
+    ],
+    "fremgangsmaade": [
+      "Forvarm ovnen til 190° (375°F). Skær toppen af hvert hvidløgshoved af (ca. 0,6 cm), så fedtehuderne bliver synlige. Læg hvert hoved på et stykke alufolie. Dryp olivenolie over de blottede fedtehuder, så de er godt dækket. Drys eventuelt lidt salt over.",
+      "Pak hvidløgshovederne tæt ind i alufolien. Læg dem på en bageplade eller direkte på ovnristen. Rist i 30–40 min, til fedtehuderne er bløde og gyldenbrune.",
+      "I en stor skål blandes det ristede hvidløg (presset ud af skallerne), blødgjort flødeost, hytteost og Hellmann's Garlic Aioli. Pisk glat med en håndmikser.",
+      "Vend 1 kop revet mozzarella, 1 kop revet parmesan, 2 spsk hakkede purløg, 1 spsk hakket persille, løgpulver, salt og hvidløgspulver i. Bland, til alt er godt blandet.",
+      "Hæld blandingen i et ovnfast fad og fordel jævnt. Top med resten af mozzarella og parmesan.",
+      "Bag i den forvarmede ovn i 15–20 min, til dippen er boblende og gylden på toppen. Tag den ud og lad den køle lidt af. Drys med friskhakkede purløg.",
+      "Server med crostini (små ristede brødskiver)."
+    ],
+    "noter": "Serveres med crostini (små ristede brødskiver). Hvidløget kan ristes i god tid før.}"
+  },
+  {
+    "id": "crispy-smashed-potatoes",
+    "titel": "Crispy Smashed Potatoes",
+    "kategori": "Andet",
+    "tags": [
+      "kartofler",
+      "vegetar"
+    ],
+    "ovn": "220° varmluft",
+    "bagetid": "20–30 min",
+    "bagetidMin": 25,
+    "form": "Bageplade",
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "500 g små kartofler",
+      "30 ml olivenolie",
+      "2–3 fed hvidløg, finthakket",
+      "Salt efter smag",
+      "Peber efter smag",
+      "Friske krydderurter efter smag (valgfrit, fx persille eller timian)"
+    ],
+    "fremgangsmaade": [
+      "Kog de små kartofler i let saltet vand i ca. 15–20 minutter, indtil de er møre, når du stikker i dem med en gaffel.",
+      "Hæld vandet fra, og lad dem køle lidt af.",
+      "Læg kartoflerne på en bageplade med bagepapir, og tryk dem forsigtigt flade med en gaffel eller bunden af et glas.",
+      "Dryp generøst med olivenolie over kartoflerne.",
+      "Drys med finthakket hvidløg, salt og peber.",
+      "Bag i en 220 °C varm ovn (varmluft 200 °C) i 20–30 minutter, eller indtil de er gyldne og sprøde.",
+      "Pynt med friske krydderurter, hvis du har lyst, og server straks."
+    ],
+    "noter": "Server straks, mens de stadig er sprøde.}"
+  },
+  {
+    "id": "balkan-cevapi",
+    "titel": "Balkan Cevapi",
+    "kategori": "Andet",
+    "tags": [
+      "kød",
+      "lam",
+      "oksekød"
+    ],
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "450 g hakket oksekød",
+      "450 g hakket lammekød",
+      "1 tsk natron",
+      "1 tsk salt",
+      "1 tsk sort peber",
+      "1 tsk paprika",
+      "4 fed hvidløg, finthakket",
+      "1 lille løg, revet",
+      "60 ml danskvand"
+    ],
+    "fremgangsmaade": [
+      "Bland hakket oksekød og hakket lammekød i en stor skål.",
+      "Tilsæt natron, salt, sort peber og paprika.",
+      "Rør finthakket hvidløg og revet løg i farsen.",
+      "Hæld danskvand i og bland grundigt, indtil det hele er ensartet.",
+      "Form farsen til små pølseformede stykker (ćevapi).",
+      "Forvarm grill eller pande til middelhøj varme.",
+      "Steg ćevapi 4-5 minutter på hver side, til de er brunede og gennemstegte.",
+      "Server varme med pitabrød, løg og dine yndlingssaucer."
+    ]
+  },
+  {
+    "id": "bagt-spaghetti-med-hjemmelavet-alfredo-koed-og-marinara",
+    "titel": "Bagt spaghetti med hjemmelavet Alfredo",
+    "kategori": "Andet",
+    "tags": [
+      "pasta",
+      "oksekød",
+      "ovnret"
+    ],
+    "ovn": "175°",
+    "bagetid": "20–25 min",
+    "bagetidMin": 23,
+    "udbytte": "9 personer",
+    "form": "2 store ovnfaste fade",
+    "tilfoejet": "2026-11-08",
+    "ingredienser": [
+      "900 g spaghetti",
+      "2 glas marinara sauce (ca. 900 g pr. glas) eller 2 flasker passata",
+      "1,2 kg hakket oksekød",
+      "300 g smør",
+      "1 liter piskefløde",
+      "450 g friskrevet parmesan",
+      "600 g revet mozzarella",
+      "1 stort hvidt løg",
+      "1 hel hvidløg",
+      "Salt",
+      "Peber",
+      "Italiensk krydderiblanding",
+      "1 tsk sukker (kun hvis du bruger passata)",
+      "Evt. chiliflager"
+    ],
+    "fremgangsmaade": [
+      "Smelt 300 g smør. Tilsæt 5 tsk hakket hvidløg og svits 1 minut. Hæld 1 liter piskefløde i. Tilsæt 1,5 tsk italiensk krydderi, 1,25 tsk salt og 1/2 tsk peber. Lad simre 5–6 minutter uden at koge. Tag af varmen og rør 450 g friskrevet parmesan i lidt ad gangen.",
+      "Forvarm ovnen til 175°.",
+      "Kog 900 g spaghetti i rigeligt saltet vand til al dente. Hæld vandet fra.",
+      "Brun 1,2 kg hakket oksekød. Tilsæt 1 hakket stort hvidt løg. Krydr med salt, peber og 2 tsk italiensk krydderi. Hæld fedtet fra. Tilsæt 2 glas marinara sauce eller 2 flasker passata + 1 tsk sukker + 2 tsk italiensk krydderi. Lad simre 10–15 minutter.",
+      "Fordel pastaen i to store ovnfaste fade. Vend Alfredo-saucen i pastaen. Fordel kødsaucen ovenpå uden at blande lagene. Drys 600 g revet mozzarella over.",
+      "Bag i 20–25 minutter.",
+      "Server med salat og hvidløgsbrød."
+    ],
+    "noter": "Server med salat og hvidløgsbrød."
   }
 ]
