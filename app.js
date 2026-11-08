@@ -346,10 +346,12 @@ function renderRecipe(r) {
   });
 
   document.getElementById('share').addEventListener('click', async () => {
-    const data = { title: r.titel, url: location.href };
+    // Del altid det rene link til opskriften.
+    const url = location.origin + location.pathname + '#/' + encodeURIComponent(r.id);
+    const data = { title: r.titel, url };
     try {
       if (navigator.share) await navigator.share(data);
-      else { await navigator.clipboard.writeText(location.href); toast('Link kopieret'); }
+      else { await navigator.clipboard.writeText(url); toast('Link kopieret'); }
     } catch { /* annulleret */ }
   });
 
@@ -673,7 +675,7 @@ async function claudeImport({ link, tekst, images }) {
 }
 
 /* ---------- Indstillinger ---------- */
-function renderSettings(note = '') {
+function renderSettings() {
   document.title = 'Indstillinger';
   const k = keys();
   app.innerHTML = `
@@ -683,7 +685,6 @@ function renderSettings(note = '') {
       </nav>
       <header class="hero"><h1>Indstillinger</h1></header>
       <form id="settings" class="form" autocomplete="off">
-        ${note ? `<p class="imp-status bad">${esc(note)}</p>` : ''}
         <p class="hint">Nøglerne gemmes kun på denne enhed og sendes kun til GitHub og Anthropic. Uden nøgler kan du stadig se og søge i opskrifterne.</p>
         <label class="field"><span>GitHub-nøgle</span><small>Bruges til at gemme, rette og slette opskrifter og billeder i ${REPO}. Se LÆS MIG for, hvordan du laver den.</small>
           <input name="github" type="password" value="${esc(k.github)}" placeholder="github_pat_…" autocomplete="off"></label>
@@ -1035,7 +1036,12 @@ function route() {
     const edit = id.startsWith('ret/') && state.recipes.find((x) => x.id === id.slice(4));
     onHome = false;
     setWake(false);
-    if (!canEdit()) return renderSettings('Tilføj din GitHub-nøgle på denne enhed for at tilføje og rette opskrifter.');
+    // Uden nøgle vises opskriften (eller forsiden) i stedet for formularen, så et link til
+    // "ret opskrift", der bliver delt ved en fejl, stadig bare viser opskriften.
+    if (!canEdit()) {
+      history.replaceState(null, '', edit ? '#/' + encodeURIComponent(edit.id) : '#/');
+      return route();
+    }
     return renderForm(edit || null, new URLSearchParams(id.split('?')[1] || ''));
   }
   const r = id && state.recipes.find((x) => x.id === id);
