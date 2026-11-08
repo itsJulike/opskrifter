@@ -96,10 +96,10 @@ function renderHome() {
           <h1>Opskrifter</h1>
           <p class="sub">${n} ${n === 1 ? 'opskrift' : 'opskrifter'}</p>
         </div>
-        <div class="top-actions">
+        ${canEdit() ? `<div class="top-actions">
           <a class="settings" href="#/indstillinger" aria-label="Indstillinger">${icon.gear}</a>
           <a class="add" href="#/ny" aria-label="Ny opskrift">${icon.plus}</a>
-        </div>
+        </div>` : ''}
       </header>
       <div class="filters">
         <label class="search">
@@ -119,6 +119,7 @@ function renderHome() {
         </select>
       </div>
       <ul class="list" id="list"></ul>
+      ${canEdit() ? '' : '<p class="owner"><a href="#/indstillinger">Ejer? Skriv din nøgle ind for at redigere</a></p>'}
     </div>`;
 
   const q = document.getElementById('q');
@@ -281,7 +282,7 @@ function renderRecipe(r) {
       <nav class="bar">
         <a class="iconbtn" href="#/" aria-label="Tilbage til opskrifter">${icon.back}<span>Opskrifter</span></a>
         <div class="actions">
-          <a class="iconbtn" href="#/ret/${encodeURIComponent(r.id)}" aria-label="Ret opskrift">${icon.edit}</a>
+          ${canEdit() ? `<a class="iconbtn" href="#/ret/${encodeURIComponent(r.id)}" aria-label="Ret opskrift">${icon.edit}</a>` : ''}
           <button class="iconbtn" id="share" type="button" aria-label="Del">${icon.share}</button>
           <button class="iconbtn" id="fav" type="button" aria-pressed="${fav}" aria-label="${fav ? 'Fjern fra favoritter' : 'Tilføj til favoritter'}">${icon.heart(fav)}</button>
         </div>
@@ -460,6 +461,10 @@ const BRANCH = 'main';
 const MODEL = 'claude-haiku-5-5';
 
 const keys = () => ({ github: load('githubNoegle', ''), claude: load('claudeNoegle', '') });
+
+// Knapperne til at tilføje og rette opskrifter (og tandhjulet) vises kun på enheder med en GitHub-nøgle.
+// Andre, der får et delt link, ser bare opskrifterne. Indstillinger kan åbnes via et lille link nederst på forsiden.
+const canEdit = () => !!keys().github;
 
 // kind: 'nokey' (nøgle mangler), 'auth' (nøgle virker ikke), 'conflict' (filen er ændret imens)
 function fail(msg, kind = '') {
@@ -668,7 +673,7 @@ async function claudeImport({ link, tekst, images }) {
 }
 
 /* ---------- Indstillinger ---------- */
-function renderSettings() {
+function renderSettings(note = '') {
   document.title = 'Indstillinger';
   const k = keys();
   app.innerHTML = `
@@ -678,6 +683,7 @@ function renderSettings() {
       </nav>
       <header class="hero"><h1>Indstillinger</h1></header>
       <form id="settings" class="form" autocomplete="off">
+        ${note ? `<p class="imp-status bad">${esc(note)}</p>` : ''}
         <p class="hint">Nøglerne gemmes kun på denne enhed og sendes kun til GitHub og Anthropic. Uden nøgler kan du stadig se og søge i opskrifterne.</p>
         <label class="field"><span>GitHub-nøgle</span><small>Bruges til at gemme, rette og slette opskrifter og billeder i ${REPO}. Se LÆS MIG for, hvordan du laver den.</small>
           <input name="github" type="password" value="${esc(k.github)}" placeholder="github_pat_…" autocomplete="off"></label>
@@ -1029,6 +1035,7 @@ function route() {
     const edit = id.startsWith('ret/') && state.recipes.find((x) => x.id === id.slice(4));
     onHome = false;
     setWake(false);
+    if (!canEdit()) return renderSettings('Tilføj din GitHub-nøgle på denne enhed for at tilføje og rette opskrifter.');
     return renderForm(edit || null, new URLSearchParams(id.split('?')[1] || ''));
   }
   const r = id && state.recipes.find((x) => x.id === id);

@@ -87,6 +87,8 @@ a { color: inherit; text-decoration: none; }
 .top-actions { display: flex; align-items: center; gap: 6px; flex: none; }
 .settings { width: 44px; height: 44px; margin-top: 2px; display: grid; place-items: center; color: var(--muted); border-radius: 50%; }
 .settings:active { background: var(--chip); }
+.owner { margin: 32px 0 8px; text-align: center; font-size: 0.85rem; }
+.owner a { color: var(--muted); }
 .error a, .imp-status a { color: inherit; font-weight: 700; text-decoration: underline; }
 .top h1 {
   font: 800 2.3rem/1.1 var(--head);
