@@ -5,14 +5,24 @@ https://markusvej.dk/opskrifter/ (fordi markusvej.dk allerede er sat op på `its
 
 GitHub Pages kan ikke køre kode på serveren. Derfor gemmer appen opskrifter og billeder ved at lægge
 dem direkte i repoet, og den kalder Claude direkte fra telefonen. Det kræver to nøgler, som du skriver
-ind under **Indstillinger** (tandhjulet på forsiden). De gemmes kun på den enhed, du skriver dem på.
+ind under **Indstillinger** (tandhjulet på forsiden, eller linket nederst på forsiden, indtil nøglen er skrevet ind). De gemmes kun på den enhed, du skriver dem på.
 Uden nøgler kan alle stadig se, søge i og skalere opskrifterne.
+
+## Del opskrifter
+
+Tryk på **Del-knappen** i en opskrift og send linket. Modtageren skal ikke logge ind. På enheder uden
+GitHub-nøgle er knapperne til at tilføje (**+**), rette (**blyanten**) og **Indstillinger** (tandhjulet)
+skjult, så de kun kan se, søge i og skalere opskrifterne. Ingen kan ændre noget uden din GitHub-nøgle.
+
+På en ny enhed, hvor du ikke har skrevet nøglen ind endnu, trykker du på det lille link
+**Ejer? Skriv din nøgle ind for at redigere** nederst på forsiden.
 
 ## Læg appen på iPhonen
 
 1. Åbn `https://markusvej.dk/opskrifter/` i Safari.
 2. Tryk på **Del-knappen** → **Føj til hjemmeskærm**. Den åbner i fuld skærm og virker offline.
-3. Åbn appen, tryk på tandhjulet og skriv de to nøgler ind (se nedenfor). Tryk **Gem og test**.
+3. Åbn appen, tryk på linket **Ejer? Skriv din nøgle ind for at redigere** nederst på forsiden og skriv
+   de to nøgler ind (se nedenfor). Tryk **Gem og test**.
 
 ## GitHub-nøgle (til at gemme)
 
@@ -79,5 +89,5 @@ Felter: `titel`, `kategori`, `tags`, `ovn`, `bagetid`, `bagetidMin` (tal, bruges
 `udbytte`, `form`, `tilfoejet` (dato), `ingredienser`, `fremgangsmaade`, `noter`, `kilde` (link),
 `billede` (fx `billeder/banankage-1730000000000.jpg`).
 
-Hvis du ændrer i `app.js` eller `app.css`, så hæv tallet i `opskrifter-v10` øverst i `sw.js`
-(fx til `v11`), så telefonen henter den nye udgave.
+Hvis du ændrer i `app.js` eller `app.css`, så hæv tallet i `opskrifter-v11` øverst i `sw.js`
+(fx til `v12`), så telefonen henter den nye udgave.
