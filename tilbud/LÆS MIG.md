@@ -62,7 +62,7 @@ Markdown-kort:
 ```yaml
 type: markdown
 title: 🥤 Pepsi Max
-content: >-
+content: |
   {% set b = state_attr('sensor.pepsi_max_billigst', 'billigst_nu') %}
   {% if b %}**Billigst nu:** {{ b.butik }} – {{ b.literpris }} kr/l ({{ b.stykpris }} kr/stk),
   {{ b.pakning }} for {{ b.pris }} kr, til {{ b.til }}{% endif %}
