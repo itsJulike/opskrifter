@@ -1,0 +1,29 @@
+{
+  "position": { "lat": 56.0, "lng": 10.5, "radius_meter": 700000 },
+  "udeluk_graensehandel": true,
+  "udeluk_butikker": [
+    "BorderShop",
+    "Calle",
+    "Fleggaard",
+    "Nielsen Scan-Shop",
+    "Scandinavian Park",
+    "CITTI",
+    "Poetzsch Padborg",
+    "fakta Tyskland",
+    "Grenzmarkt Zur Krone",
+    "Otto Duborg"
+  ],
+  "varer": [
+    {
+      "navn": "Pepsi Max",
+      "emoji": "🥤",
+      "soegeord": ["pepsi max", "pepsi"],
+      "skal_indeholde": ["pepsi max"],
+      "ogsaa_flere_varianter_af": ["pepsi"],
+      "min_cl": 20,
+      "max_cl": 100,
+      "alarm_max_literpris": 12.0,
+      "kalender_max_literpris": 15.0
+    }
+  ]
+}
