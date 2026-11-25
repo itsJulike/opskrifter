@@ -4,8 +4,10 @@ Holder øje med udvalgte varer i tilbudsaviserne (data fra eTilbudsavis) og samm
 **literpris**, så 24 × 33 cl, 20 × 33 cl og 0,5 l kan stå i samme liste. Stykprisen står ved siden af.
 Lige nu holdes der øje med Pepsi Max.
 
+- **Webapp** – `index.html`, se nedenfor.
 - **[OVERSIGT.md](OVERSIGT.md)** – pr. vare: billigst lige nu, dag for dag de næste 14 dage, hvad der
   gælder nu, og hvad der kommer.
+- **aktuelle.json** – de aktuelle tilbud som data, som appen og Home Assistant læser.
 - **tilbud.ics** – kalender med ét heldagsarrangement pr. tilbud, fx
   „🥤 Pepsi Max 8,21 kr/l · 2,71 kr/stk – 365discount“ fra torsdag til onsdag.
 - **Alarm** – når et nyt tilbud dukker op under alarmgrænsen, opretter GitHub et issue, og du får en
@@ -13,6 +15,65 @@ Lige nu holdes der øje med Pepsi Max.
 
 Det kører af sig selv to gange i døgnet via GitHub Actions (`.github/workflows/tilbud.yml`). Du kan
 også starte det i hånden under *Actions → Tilbud → Run workflow*.
+
+## Webappen
+
+Når GitHub Pages er slået til (se nedenfor), ligger appen på
+
+```
+https://itsjulike.github.io/opskrifter/tilbud/
+```
+
+Den viser, hvad der er billigst i dag, en tidslinje over de næste 14 dage og alle tilbud. Du kan skifte
+mellem kr pr. liter og kr pr. stk. På telefonen kan siden lægges på hjemmeskærmen (iPhone: Del →
+Føj til hjemmeskærm; Android: menu → Føj til startskærm), så den åbner som en app.
+
+**Slå GitHub Pages til (én gang):** repoets *Settings → Pages → Build and deployment*, vælg
+*Deploy from a branch*, branch `main` og mappe `/ (root)`, og tryk *Save*. Efter et par minutter
+virker adressen ovenfor.
+
+## Home Assistant
+
+Tre muligheder, som kan kombineres:
+
+**1. Hele appen i et dashboard.** Tilføj et *Webside*-kort (Webpage card) med adressen til appen
+ovenfor.
+
+**2. Sensor med den billigste pris.** I `configuration.yaml`:
+
+```yaml
+rest:
+  - resource: https://raw.githubusercontent.com/itsJulike/opskrifter/main/tilbud/aktuelle.json
+    scan_interval: 3600
+    sensor:
+      - name: "Pepsi Max billigst"
+        unique_id: tilbud_pepsi_max_billigst
+        unit_of_measurement: "kr/l"
+        value_template: "{{ value_json.varer[0].billigst_nu.literpris if value_json.varer[0].billigst_nu else none }}"
+        json_attributes_path: "$.varer[0]"
+        json_attributes:
+          - billigst_nu
+          - tilbud
+```
+
+Så kan du lave automationer (fx en besked, når prisen kommer under 9 kr/l) og vise listen med et
+Markdown-kort:
+
+```yaml
+type: markdown
+title: 🥤 Pepsi Max
+content: >-
+  {% set b = state_attr('sensor.pepsi_max_billigst', 'billigst_nu') %}
+  {% if b %}**Billigst nu:** {{ b.butik }} – {{ b.literpris }} kr/l ({{ b.stykpris }} kr/stk),
+  {{ b.pakning }} for {{ b.pris }} kr, til {{ b.til }}{% endif %}
+
+  {% for t in state_attr('sensor.pepsi_max_billigst', 'tilbud') or [] %}
+  - {{ t.literpris }} kr/l · {{ t.stykpris }} kr/stk – {{ t.butik }} ({{ t.fra[8:] }}/{{ t.fra[5:7] }}–{{ t.til[8:] }}/{{ t.til[5:7] }})
+  {% endfor %}
+```
+
+**3. Kalenderen.** *Indstillinger → Enheder og tjenester → Tilføj integration → Remote Calendar*
+(Fjernkalender) med adressen til `tilbud.ics` nedenfor.
 
 ## Kalenderen
 

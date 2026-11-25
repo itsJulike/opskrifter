@@ -332,6 +332,27 @@ def kalender(config, tilbud, nu):
     return "\r\n".join(foldet) + "\r\n"
 
 
+def data_til_app(config, aktuelle, i_dag, nu):
+    """Data til webappen og Home Assistant."""
+    idag = i_dag.isoformat()
+    varer = []
+    for vare in config["varer"]:
+        lst = sorter([t for t in aktuelle if t["vare"] == vare["navn"]])
+        tilbud = [{
+            "butik": t["butik"], "pris": t["pris"], "antal": t["antal"], "cl": t["cl"],
+            "pakning": pakning(t), "type": t["type"], "literpris": t["literpris"],
+            "stykpris": t["stykpris"], "fra": t["fra"], "til": t["til"], "noter": t["noter"],
+            "beskrivelse": f"{t['overskrift']}: {t['beskrivelse']}",
+            "gaelder_nu": t["fra"] <= idag <= t["til"], "foerst_set": t.get("foerst_set"),
+        } for t in lst]
+        nu_ = [t for t in tilbud if t["gaelder_nu"]]
+        varer.append({"navn": vare["navn"], "emoji": vare.get("emoji", ""),
+                      "alarm_max_literpris": vare.get("alarm_max_literpris"),
+                      "billigst_nu": nu_[0] if nu_ else None,
+                      "antal_nu": len(nu_), "tilbud": tilbud})
+    return {"opdateret": nu.isoformat(timespec="minutes"), "i_dag": idag, "varer": varer}
+
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -379,6 +400,9 @@ def main():
     historik_fil.write_text(json.dumps(historik, ensure_ascii=False, indent=1, sort_keys=True)
                             + "\n", encoding="utf-8")
     (MAPPE / "OVERSIGT.md").write_text(oversigt(config, aktuelle, i_dag, nu), encoding="utf-8")
+    (MAPPE / "aktuelle.json").write_text(
+        json.dumps(data_til_app(config, aktuelle, i_dag, nu), ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8")
     (MAPPE / "tilbud.ics").write_text(kalender(config, historik.values(), nu), encoding="utf-8",
                                       newline="")
 

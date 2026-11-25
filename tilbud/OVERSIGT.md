@@ -1,6 +1,6 @@
 # Tilbud
 
-Opdateret 25/11/2026 kl. 15:58. Data fra eTilbudsavis. Sorteret efter literpris, så forskellige størrelser kan sammenlignes. Priserne er uden pant.
+Opdateret 25/11/2026 kl. 16:00. Data fra eTilbudsavis. Sorteret efter literpris, så forskellige størrelser kan sammenlignes. Priserne er uden pant.
 
 ## 🥤 Pepsi Max
 
