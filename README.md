@@ -13,3 +13,8 @@ Madplanen ligger stadig i det private repo `itsJulike/opskrifter-data`.
 
 **Backup:** Hele historikken ligger i GitHub. Åbn `recipes.json`, tryk på *History* og hent en ældre
 udgave. Historikken fra før opskrifterne blev flyttet hertil ligger i `itsJulike/opskrifter-data`.
+
+## Pepsi Max-tilbud
+
+`pepsi-max/` holder øje med Pepsi Max på dåse i tilbudsaviserne og regner prisen pr. dåse ud. Se
+`pepsi-max/LÆS MIG.md`.

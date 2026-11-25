@@ -1,0 +1,20 @@
+{
+  "soegeord": ["pepsi max", "pepsi"],
+  "position": { "lat": 56.0, "lng": 10.5, "radius_meter": 700000 },
+  "daase_stoerrelse_cl": [33],
+  "min_antal_i_pakke": 6,
+  "medtag_pepsi_flere_varianter": true,
+  "alarm_max_pris_pr_daase": 4.0,
+  "graensebutikker": [
+    "BorderShop",
+    "Calle",
+    "Fleggaard",
+    "Nielsen Scan-Shop",
+    "Scandinavian Park",
+    "CITTI",
+    "Poetzsch Padborg",
+    "fakta Tyskland",
+    "Grenzmarkt Zur Krone",
+    "Otto Duborg"
+  ]
+}

@@ -1,0 +1,74 @@
+name: Pepsi Max-tilbud
+
+on:
+  schedule:
+    # To gange i døgnet (UTC). Nye aviser kommer typisk ud dagene før de gælder.
+    - cron: "17 5 * * *"
+    - cron: "17 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pepsi-max
+  cancel-in-progress: false
+
+jobs:
+  tjek:
+    runs-on: ubuntu-latest
+    env:
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Hent tilbud
+        run: python pepsi-max/tjek_tilbud.py
+
+      - name: Gem oversigt og kalender
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pepsi-max/OVERSIGT.md pepsi-max/pepsi-max.ics pepsi-max/data/tilbud.json
+          if git diff --cached --quiet; then
+            echo "Ingen ændringer."
+            exit 0
+          fi
+          git commit -m "Pepsi Max-tilbud opdateret"
+          for i in 1 2 3; do
+            git pull --rebase && git push && break
+            sleep 5
+          done
+
+      - name: Alarm – nyt GitHub-issue
+        if: hashFiles('pepsi-max/data/nye.md') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            cat pepsi-max/data/nye.md
+            echo
+            echo "@${{ github.repository_owner }}"
+          } > /tmp/issue.md
+          gh issue create --title "$(cat pepsi-max/data/nye_titel.txt)" --body-file /tmp/issue.md
+
+      - name: Alarm – push til telefonen (ntfy, valgfri)
+        if: hashFiles('pepsi-max/data/nye.md') != '' && env.NTFY_TOPIC != ''
+        run: |
+          python - <<'PY' > /tmp/ntfy.json
+          import json, os
+          print(json.dumps({
+              "topic": os.environ["NTFY_TOPIC"],
+              "title": open("pepsi-max/data/nye_titel.txt", encoding="utf-8").read(),
+              "message": open("pepsi-max/data/nye.md", encoding="utf-8").read(),
+              "markdown": True,
+              "tags": ["cup_with_straw"],
+              "click": "https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}/pepsi-max/OVERSIGT.md",
+          }))
+          PY
+          curl -s -H "Content-Type: application/json" --data-binary @/tmp/ntfy.json https://ntfy.sh/
