@@ -1,5 +1,49 @@
 {
- "Pepsi Max:2iUg65Dsy6Wlh58Z2Gm9D": {
+ "Pepsi Max|365discount|2026-11-19|2026-11-25|89.0|24|33": {
+  "antal": 24,
+  "beskrivelse": "24 x 33 cl. Literpris 11,24 + pant. 1 pakke",
+  "butik": "365discount",
+  "cl": 33,
+  "foerst_set": "2026-11-25",
+  "fra": "2026-11-19",
+  "id": "TuxG5qHZs3TUzkCDhE84X",
+  "literpris": 11.24,
+  "noter": [],
+  "overskrift": "Faxe Kondi eller Pepsi Max*",
+  "pris": 89.0,
+  "status": "ja",
+  "stoerrelser_cl": [
+   33
+  ],
+  "stykpris": 3.71,
+  "til": "2026-11-25",
+  "type": "?",
+  "vare": "Pepsi Max"
+ },
+ "Pepsi Max|365discount|2026-11-26|2026-12-02|65.0|24|33": {
+  "antal": 24,
+  "beskrivelse": "Sælges i hele forpakninger Maks. 6 pakker pr. kunde 24 x 33 cl. Literpris 8,21 + pant. 1 pakke.",
+  "butik": "365discount",
+  "cl": 33,
+  "foerst_set": "2026-11-25",
+  "fra": "2026-11-26",
+  "id": "wIllhedsNJ1a4pGAfnAy6",
+  "literpris": 8.21,
+  "noter": [
+   "max 6 pakker"
+  ],
+  "overskrift": "Faxe Kondi eller Pepsi Max",
+  "pris": 65.0,
+  "status": "ja",
+  "stoerrelser_cl": [
+   33
+  ],
+  "stykpris": 2.71,
+  "til": "2026-12-02",
+  "type": "?",
+  "vare": "Pepsi Max"
+ },
+ "Pepsi Max|Bilka|2026-11-20|2026-11-26|10.0|1|50": {
   "antal": 1,
   "beskrivelse": "0,5-1,5 liter. Flere varianter. Ekskl. embl. Pr. liter max. 20.- Ikke egnet til børn",
   "butik": "Bilka",
@@ -24,54 +68,7 @@
   "type": "?",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:4r-h-v_U-oOA91tNCcOpg": {
-  "antal": 24,
-  "beskrivelse": "GOD PRIS Flere varianter. Literpris 10,73 Afhentningspris Sælges kun i hele rammer + pant 24 X 33 cl",
-  "butik": "LET-KØB",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-16",
-  "id": "4r-h-v_U-oOA91tNCcOpg",
-  "literpris": 10.73,
-  "noter": [
-   "afhentningspris",
-   "„flere varianter“, Pepsi Max ikke nævnt"
-  ],
-  "overskrift": "Faxe Kondi eller Pepsi",
-  "pris": 85.0,
-  "status": "måske",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 3.54,
-  "til": "2026-11-29",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:AxHSNOXxUmRVSFWszo0jh": {
-  "antal": 24,
-  "beskrivelse": "Gælder viste varianter",
-  "butik": "Løvbjerg",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-27",
-  "id": "AxHSNOXxUmRVSFWszo0jh",
-  "literpris": 8.21,
-  "noter": [
-   "antal udregnet fra samlet mængde"
-  ],
-  "overskrift": "Pepsi Max el. Faxe Kondi sodavand",
-  "pris": 64.99,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 2.71,
-  "til": "2026-12-03",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:BEzz-p77QgLr66Cm7B-1c": {
+ "Pepsi Max|Bilka|2026-11-20|2026-11-26|89.0|24|33": {
   "antal": 24,
   "beskrivelse": "24x33 cl. fl. Flere varianter. Ekskl. embl. Pr. liter 11.24 Pr. liter 9.97",
   "butik": "Bilka",
@@ -94,72 +91,28 @@
   "type": "flaske",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:DBD6hkcH7EhqxtQpM8Gib": {
-  "antal": 24,
-  "beskrivelse": "Gælder viste varianter",
-  "butik": "Løvbjerg",
+ "Pepsi Max|Bilka|2026-11-27|2026-12-03|49.0|12|33": {
+  "antal": 12,
+  "beskrivelse": "12x33 cl. Faxe Kondi eller Pepsi Max. 12x33 cl. ds. Royal Classic eller Royal Pilsner. Ekskl. embl. Pr. liter 12.37",
+  "butik": "Bilka",
   "cl": 33,
   "foerst_set": "2026-11-25",
   "fra": "2026-11-27",
-  "id": "DBD6hkcH7EhqxtQpM8Gib",
-  "literpris": 8.21,
-  "noter": [
-   "antal udregnet fra samlet mængde"
-  ],
-  "overskrift": "Pepsi Max el. Faxe Kondi sodavand",
-  "pris": 64.99,
+  "id": "p7AZVpBpYSWJQkAlIy-K7",
+  "literpris": 12.37,
+  "noter": [],
+  "overskrift": "Drikkevaremarked",
+  "pris": 49.0,
   "status": "ja",
   "stoerrelser_cl": [
    33
   ],
-  "stykpris": 2.71,
+  "stykpris": 4.08,
   "til": "2026-12-03",
   "type": "?",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:MdkXwsUoND7bmqJg3Vrpq": {
-  "antal": 24,
-  "beskrivelse": "Sælges i hele forpakninger 24 x 33 cl. Literpris 11,24 + pant. 1 pakke.",
-  "butik": "365discount",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-19",
-  "id": "MdkXwsUoND7bmqJg3Vrpq",
-  "literpris": 11.24,
-  "noter": [],
-  "overskrift": "Faxe Kondi eller Pepsi Max",
-  "pris": 89.0,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 3.71,
-  "til": "2026-11-25",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:TuxG5qHZs3TUzkCDhE84X": {
-  "antal": 24,
-  "beskrivelse": "24 x 33 cl. Literpris 11,24 + pant. 1 pakke",
-  "butik": "365discount",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-19",
-  "id": "TuxG5qHZs3TUzkCDhE84X",
-  "literpris": 11.24,
-  "noter": [],
-  "overskrift": "Faxe Kondi eller Pepsi Max*",
-  "pris": 89.0,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 3.71,
-  "til": "2026-11-25",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:UZrpou6YnHEzQArNi1TmB": {
+ "Pepsi Max|Brugsen|2026-11-20|2026-12-03|13.0|1|50": {
   "antal": 1,
   "beskrivelse": "Flere varianter. 50-150 cl. Literpris maks. 26,00 + pant.",
   "butik": "Brugsen",
@@ -183,14 +136,61 @@
   "type": "?",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:X7j2ClCoXK3j1mgHFU2rI": {
+ "Pepsi Max|LET-KØB|2026-11-16|2026-11-29|85.0|24|33": {
+  "antal": 24,
+  "beskrivelse": "GOD PRIS Flere varianter. Literpris 10,73 Afhentningspris Sælges kun i hele rammer + pant 24 X 33 cl",
+  "butik": "LET-KØB",
+  "cl": 33,
+  "foerst_set": "2026-11-25",
+  "fra": "2026-11-16",
+  "id": "4r-h-v_U-oOA91tNCcOpg",
+  "literpris": 10.73,
+  "noter": [
+   "afhentningspris",
+   "„flere varianter“, Pepsi Max ikke nævnt"
+  ],
+  "overskrift": "Faxe Kondi eller Pepsi",
+  "pris": 85.0,
+  "status": "måske",
+  "stoerrelser_cl": [
+   33
+  ],
+  "stykpris": 3.54,
+  "til": "2026-11-29",
+  "type": "?",
+  "vare": "Pepsi Max"
+ },
+ "Pepsi Max|Løvbjerg|2026-11-27|2026-12-03|64.99|24|33": {
+  "antal": 24,
+  "beskrivelse": "Gælder viste varianter",
+  "butik": "Løvbjerg",
+  "cl": 33,
+  "foerst_set": "2026-11-25",
+  "fra": "2026-11-27",
+  "id": "AxHSNOXxUmRVSFWszo0jh",
+  "literpris": 8.21,
+  "noter": [
+   "antal udregnet fra samlet mængde"
+  ],
+  "overskrift": "Pepsi Max el. Faxe Kondi sodavand",
+  "pris": 64.99,
+  "status": "ja",
+  "stoerrelser_cl": [
+   33
+  ],
+  "stykpris": 2.71,
+  "til": "2026-12-03",
+  "type": "?",
+  "vare": "Pepsi Max"
+ },
+ "Pepsi Max|Løvbjerg|2026-11-27|2026-12-03|79.99|20|33": {
   "antal": 20,
   "beskrivelse": "Udvalgte varianter 33 cl/6/20 ds el. 50 cl/8 ds Pr ltr max 40,40 Excl pant",
   "butik": "Løvbjerg",
   "cl": 33,
   "foerst_set": "2026-11-25",
   "fra": "2026-11-27",
-  "id": "X7j2ClCoXK3j1mgHFU2rI",
+  "id": "wNOcphtDrzBgQ4S5G-ajC",
   "literpris": 12.12,
   "noter": [
    "flere pakninger: 6–20 stk"
@@ -206,53 +206,7 @@
   "type": "dåse",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:XVNKRFeFycJ0eGRWh_gTJ": {
-  "antal": 24,
-  "beskrivelse": "Flere varianter. Literpris 8,71. Afhentningspris Sælges kun i hele rammer. Max. 4 rammer pr. kunde pr. dag. Herefter er prisen 117,95 + pant pr. ramme. MAX. 4 RAMMER 24 X 33 CL + pant SKARP PRIS",
-  "butik": "SPAR",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-20",
-  "id": "XVNKRFeFycJ0eGRWh_gTJ",
-  "literpris": 8.71,
-  "noter": [
-   "max 4 rammer",
-   "afhentningspris",
-   "„flere varianter“, Pepsi Max ikke nævnt"
-  ],
-  "overskrift": "Faxe Kondi eller Pepsi",
-  "pris": 69.0,
-  "status": "måske",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 2.88,
-  "til": "2026-11-26",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:ZENn6A5L2U_E0Vk3KUUQ8": {
-  "antal": 12,
-  "beskrivelse": "12x33 cl. Pet. Faxe Kondi eller Pepsi Max. 12x33 cl. ds. Royal Pilsner eller Classic. Ekskl. embl. Gælder kun lukkede forpakninger. Pr. liter 12,37",
-  "butik": "føtex",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-12-01",
-  "id": "ZENn6A5L2U_E0Vk3KUUQ8",
-  "literpris": 12.37,
-  "noter": [],
-  "overskrift": "Øl eller sodavandsmarked",
-  "pris": 49.0,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 4.08,
-  "til": "2026-12-31",
-  "type": "flaske",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:b-h0_CX5fczGshUNW40DM": {
+ "Pepsi Max|MENY|2026-11-20|2026-11-26|69.95|24|33": {
   "antal": 24,
   "beskrivelse": "Flere varianter. Literpris 8,83. Max. 4 rammer pr. kunde pr. dag. Herefter er prisen 117,95 + pant pr. ramme. Afhentningspris Sælges kun i hele rammer",
   "butik": "MENY",
@@ -277,7 +231,7 @@
   "type": "?",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:exngT6YHEimJtOrYk5uxK": {
+ "Pepsi Max|Netto|2026-11-21|2026-11-27|75.0|24|33": {
   "antal": 24,
   "beskrivelse": "PRISEN GÆLDER KUN VED KØB AF HELE FORPAKNINGER. 24 x 33 cl. + pant. Pr. liter 9,47. Max. 6 stk. pr. variant pr. kunde pr. dag til denne pris",
   "butik": "Netto",
@@ -300,7 +254,32 @@
   "type": "?",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:ofbQ01EvidjfV9f5WouwQ": {
+ "Pepsi Max|SPAR|2026-11-20|2026-11-26|69.0|24|33": {
+  "antal": 24,
+  "beskrivelse": "Flere varianter. Literpris 8,71. Afhentningspris Sælges kun i hele rammer. Max. 4 rammer pr. kunde pr. dag. Herefter er prisen 117,95 + pant pr. ramme. MAX. 4 RAMMER 24 X 33 CL + pant SKARP PRIS",
+  "butik": "SPAR",
+  "cl": 33,
+  "foerst_set": "2026-11-25",
+  "fra": "2026-11-20",
+  "id": "XVNKRFeFycJ0eGRWh_gTJ",
+  "literpris": 8.71,
+  "noter": [
+   "max 4 rammer",
+   "afhentningspris",
+   "„flere varianter“, Pepsi Max ikke nævnt"
+  ],
+  "overskrift": "Faxe Kondi eller Pepsi",
+  "pris": 69.0,
+  "status": "måske",
+  "stoerrelser_cl": [
+   33
+  ],
+  "stykpris": 2.88,
+  "til": "2026-11-26",
+  "type": "?",
+  "vare": "Pepsi Max"
+ },
+ "Pepsi Max|føtex|2026-11-13|2026-11-26|95.0|24|33": {
   "antal": 24,
   "beskrivelse": "18x33 cl. ds. Heineken eller Royal Export øl. 24x33 cl. ds. Royal Pilsner eller Classic. 24x33 cl. pet. Faxe Kondi eller Pepsi Max. Flere varianter. Gælder kun lukkede forpakninger. Ekskl. embl. Pr. liter max. 15,99",
   "butik": "føtex",
@@ -321,28 +300,7 @@
   "type": "flaske",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:orarevWVUEJlmAnOX3zsF": {
-  "antal": 20,
-  "beskrivelse": "20 x 0,33 l · Frit valg / Flere varianter · 3,50 - 69,95 kr./stk",
-  "butik": "nemlig",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-23",
-  "id": "orarevWVUEJlmAnOX3zsF",
-  "literpris": 10.6,
-  "noter": [],
-  "overskrift": "Faxe Kondi eller Pepsi Max sodavand",
-  "pris": 69.95,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 3.5,
-  "til": "2026-11-28",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:p6Q_VEC8-uBBsL844qPgn": {
+ "Pepsi Max|føtex|2026-11-27|2026-12-03|99.0|24|33": {
   "antal": 24,
   "beskrivelse": "24x33 cl. ds. Flere varianter. Gælder kun lukkede forpakninger. Ekskl. embl. Pr. liter 12,50",
   "butik": "føtex",
@@ -363,94 +321,45 @@
   "type": "dåse",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:p7AZVpBpYSWJQkAlIy-K7": {
+ "Pepsi Max|føtex|2026-12-01|2026-12-31|49.0|12|33": {
   "antal": 12,
-  "beskrivelse": "12x33 cl. Faxe Kondi eller Pepsi Max. 12x33 cl. ds. Royal Classic eller Royal Pilsner. Ekskl. embl. Pr. liter 12.37",
-  "butik": "Bilka",
+  "beskrivelse": "12x33 cl. Pet. Faxe Kondi eller Pepsi Max. 12x33 cl. ds. Royal Pilsner eller Classic. Ekskl. embl. Gælder kun lukkede forpakninger. Pr. liter 12,37",
+  "butik": "føtex",
   "cl": 33,
   "foerst_set": "2026-11-25",
-  "fra": "2026-11-27",
-  "id": "p7AZVpBpYSWJQkAlIy-K7",
+  "fra": "2026-12-01",
+  "id": "ZENn6A5L2U_E0Vk3KUUQ8",
   "literpris": 12.37,
   "noter": [],
-  "overskrift": "Drikkevaremarked",
+  "overskrift": "Øl eller sodavandsmarked",
   "pris": 49.0,
   "status": "ja",
   "stoerrelser_cl": [
    33
   ],
   "stykpris": 4.08,
-  "til": "2026-12-03",
-  "type": "?",
+  "til": "2026-12-31",
+  "type": "flaske",
   "vare": "Pepsi Max"
  },
- "Pepsi Max:wIllhedsNJ1a4pGAfnAy6": {
-  "antal": 24,
-  "beskrivelse": "Sælges i hele forpakninger Maks. 6 pakker pr. kunde 24 x 33 cl. Literpris 8,21 + pant. 1 pakke.",
-  "butik": "365discount",
-  "cl": 33,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-26",
-  "id": "wIllhedsNJ1a4pGAfnAy6",
-  "literpris": 8.21,
-  "noter": [
-   "max 6 pakker"
-  ],
-  "overskrift": "Faxe Kondi eller Pepsi Max",
-  "pris": 65.0,
-  "status": "ja",
-  "stoerrelser_cl": [
-   33
-  ],
-  "stykpris": 2.71,
-  "til": "2026-12-02",
-  "type": "?",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:wNOcphtDrzBgQ4S5G-ajC": {
+ "Pepsi Max|nemlig|2026-11-23|2026-11-28|69.95|20|33": {
   "antal": 20,
-  "beskrivelse": "Udvalgte varianter 33 cl/6/20 ds el. 50 cl/8 ds Pr ltr max 40,40 Excl pant",
-  "butik": "Løvbjerg",
+  "beskrivelse": "20 x 0,33 l · Frit valg / Flere varianter · 3,50 - 69,95 kr./stk",
+  "butik": "nemlig",
   "cl": 33,
   "foerst_set": "2026-11-25",
-  "fra": "2026-11-27",
-  "id": "wNOcphtDrzBgQ4S5G-ajC",
-  "literpris": 12.12,
-  "noter": [
-   "flere pakninger: 6–20 stk"
-  ],
-  "overskrift": "Pepsi Max, Faxe Kondi, Royal øl, Anarkist el. Booster",
-  "pris": 79.99,
+  "fra": "2026-11-23",
+  "id": "orarevWVUEJlmAnOX3zsF",
+  "literpris": 10.6,
+  "noter": [],
+  "overskrift": "Faxe Kondi eller Pepsi Max sodavand",
+  "pris": 69.95,
   "status": "ja",
   "stoerrelser_cl": [
    33
   ],
-  "stykpris": 4.0,
-  "til": "2026-12-03",
-  "type": "dåse",
-  "vare": "Pepsi Max"
- },
- "Pepsi Max:y6jYlbHPgu_XlF3MOnN7U": {
-  "antal": 1,
-  "beskrivelse": "Flere varianter. 50-150 cl. Literpris maks. 26,00 + pant. Ikke egnet til børn",
-  "butik": "Brugsen",
-  "cl": 50,
-  "foerst_set": "2026-11-25",
-  "fra": "2026-11-20",
-  "id": "y6jYlbHPgu_XlF3MOnN7U",
-  "literpris": 26.0,
-  "noter": [
-   "flere størrelser: 50 cl–150 cl"
-  ],
-  "overskrift": "Faxe Kondi, Booster eller Pepsi Max",
-  "pris": 13.0,
-  "status": "ja",
-  "stoerrelser_cl": [
-   50,
-   150
-  ],
-  "stykpris": 13.0,
-  "til": "2026-12-03",
+  "stykpris": 3.5,
+  "til": "2026-11-28",
   "type": "?",
   "vare": "Pepsi Max"
  }

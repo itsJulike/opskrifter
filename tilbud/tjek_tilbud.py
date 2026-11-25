@@ -13,6 +13,7 @@ Skriver:
 Kun standardbiblioteket bruges, så scriptet kan køre direkte i GitHub Actions.
 """
 
+import hashlib
 import json
 import re
 import sys
@@ -208,6 +209,11 @@ def vurder(t, vare):
 
 # ---------------------------------------------------------------- formattering
 
+def noegle(t):
+    """Samme tilbud kan have flere ID'er (fx regionale udgaver af avisen); kend det på indholdet."""
+    return f"{t['vare']}|{t['butik']}|{t['fra']}|{t['til']}|{t['pris']}|{t['antal']}|{t['cl']}"
+
+
 def kr(v):
     return f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
@@ -307,7 +313,7 @@ def kalender(config, tilbud, nu):
                 f"{t['overskrift']}: {t['beskrivelse']}"
         if t["noter"]:
             beskr += "\nNoter: " + ", ".join(t["noter"])
-        ud += ["BEGIN:VEVENT", f"UID:{t['id']}@tilbudsjaeger", f"DTSTAMP:{stempel}",
+        ud += ["BEGIN:VEVENT", f"UID:{hashlib.sha1(noegle(t).encode()).hexdigest()[:20]}@tilbudsjaeger", f"DTSTAMP:{stempel}",
                f"DTSTART;VALUE=DATE:{t['fra'].replace('-', '')}",
                f"DTEND;VALUE=DATE:{slut.isoformat().replace('-', '')}",
                f"SUMMARY:{ics_tekst(titel)}", f"DESCRIPTION:{ics_tekst(beskr)}",
@@ -336,6 +342,7 @@ def main():
 
     historik_fil = DATA / "tilbud.json"
     historik = json.loads(historik_fil.read_text(encoding="utf-8")) if historik_fil.exists() else {}
+    historik = {noegle(t): t for t in historik.values()}  # ældre filer brugte ID som nøgle
 
     if len(sys.argv) > 1:  # test med gemte API-svar: tjek_tilbud.py fil1.json fil2.json
         raa = list({o["id"]: o for f in sys.argv[1:]
@@ -355,13 +362,13 @@ def main():
 
     alarm = {v["navn"]: v.get("alarm_max_literpris") for v in config["varer"]}
     nye = [t for t in relevante
-           if f"{t['vare']}:{t['id']}" not in historik and t["til"] >= idag
+           if noegle(t) not in historik and t["til"] >= idag
            and alarm.get(t["vare"]) is not None and t["literpris"] <= alarm[t["vare"]]]
 
     for t in relevante:
-        noegle = f"{t['vare']}:{t['id']}"
-        t["foerst_set"] = historik.get(noegle, {}).get("foerst_set", idag)
-        historik[noegle] = t
+        n = noegle(t)
+        t["foerst_set"] = historik.get(n, {}).get("foerst_set", idag)
+        historik[n] = t
 
     # Gem 60 dage bagud; vis kun dem, der stadig gælder
     graense = (i_dag - timedelta(days=60)).isoformat()

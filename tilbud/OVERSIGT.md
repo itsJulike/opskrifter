@@ -1,6 +1,6 @@
 # Tilbud
 
-Opdateret 25/11/2026 kl. 15:57. Data fra eTilbudsavis. Sorteret efter literpris, så forskellige størrelser kan sammenlignes. Priserne er uden pant.
+Opdateret 25/11/2026 kl. 15:58. Data fra eTilbudsavis. Sorteret efter literpris, så forskellige størrelser kan sammenlignes. Priserne er uden pant.
 
 ## 🥤 Pepsi Max
 
@@ -18,7 +18,7 @@ Opdateret 25/11/2026 kl. 15:57. Data fra eTilbudsavis. Sorteret efter literpris,
 | man 30/11 | 365discount | **8,21** | 2,71 | 24 × 33 cl | Løvbjerg 8,21 kr/l (24 × 33 cl) |
 | tir 1/12 | 365discount | **8,21** | 2,71 | 24 × 33 cl | Løvbjerg 8,21 kr/l (24 × 33 cl) |
 | ons 2/12 | 365discount | **8,21** | 2,71 | 24 × 33 cl | Løvbjerg 8,21 kr/l (24 × 33 cl) |
-| tor 3/12 | Løvbjerg | **8,21** | 2,71 | 24 × 33 cl | Løvbjerg 8,21 kr/l (24 × 33 cl) |
+| tor 3/12 | Løvbjerg | **8,21** | 2,71 | 24 × 33 cl | Løvbjerg 12,12 kr/l (20 × 33 cl) |
 | fre 4/12 | føtex | **12,37** | 4,08 | 12 × 33 cl |  |
 | lør 5/12 | føtex | **12,37** | 4,08 | 12 × 33 cl |  |
 | søn 6/12 | føtex | **12,37** | 4,08 | 12 × 33 cl |  |
@@ -35,11 +35,9 @@ Opdateret 25/11/2026 kl. 15:57. Data fra eTilbudsavis. Sorteret efter literpris,
 | **10,60** | 3,50 | nemlig | 69,95 | 20 × 33 cl | ? | man 23/11 – lør 28/11 |  |
 | **10,73** | 3,54 | LET-KØB | 85,00 | 24 × 33 cl | ? | man 16/11 – søn 29/11 | afhentningspris, „flere varianter“, Pepsi Max ikke nævnt |
 | **11,24** | 3,71 | 365discount | 89,00 | 24 × 33 cl | ? | tor 19/11 – ons 25/11 |  |
-| **11,24** | 3,71 | 365discount | 89,00 | 24 × 33 cl | ? | tor 19/11 – ons 25/11 |  |
 | **11,24** | 3,71 | Bilka | 89,00 | 24 × 33 cl | flaske | fre 20/11 – tor 26/11 | „flere varianter“, Pepsi Max ikke nævnt |
 | **11,99** | 3,96 | føtex | 95,00 | 24 × 33 cl | flaske | fre 13/11 – tor 26/11 |  |
 | **20,00** | 10,00 | Bilka | 10,00 | 50 cl | ? | fre 20/11 – tor 26/11 | flere størrelser: 50 cl–150 cl, „flere varianter“, Pepsi Max ikke nævnt |
-| **26,00** | 13,00 | Brugsen | 13,00 | 50 cl | ? | fre 20/11 – tor 3/12 | flere størrelser: 50 cl–150 cl |
 | **26,00** | 13,00 | Brugsen | 13,00 | 50 cl | ? | fre 20/11 – tor 3/12 | flere størrelser: 50 cl–150 cl |
 
 ### Kommende
@@ -48,8 +46,6 @@ Opdateret 25/11/2026 kl. 15:57. Data fra eTilbudsavis. Sorteret efter literpris,
 |---:|---:|---|---:|---|:-:|---|---|
 | **8,21** | 2,71 | 365discount | 65,00 | 24 × 33 cl | ? | tor 26/11 – ons 2/12 | max 6 pakker |
 | **8,21** | 2,71 | Løvbjerg | 64,99 | 24 × 33 cl | ? | fre 27/11 – tor 3/12 | antal udregnet fra samlet mængde |
-| **8,21** | 2,71 | Løvbjerg | 64,99 | 24 × 33 cl | ? | fre 27/11 – tor 3/12 | antal udregnet fra samlet mængde |
-| **12,12** | 4,00 | Løvbjerg | 79,99 | 20 × 33 cl | dåse | fre 27/11 – tor 3/12 | flere pakninger: 6–20 stk |
 | **12,12** | 4,00 | Løvbjerg | 79,99 | 20 × 33 cl | dåse | fre 27/11 – tor 3/12 | flere pakninger: 6–20 stk |
 | **12,37** | 4,08 | Bilka | 49,00 | 12 × 33 cl | ? | fre 27/11 – tor 3/12 |  |
 | **12,37** | 4,08 | føtex | 49,00 | 12 × 33 cl | flaske | tir 1/12 – tor 31/12 |  |
